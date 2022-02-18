@@ -1,0 +1,1 @@
+pytest -vsm sanity
