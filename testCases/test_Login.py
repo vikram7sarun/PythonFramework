@@ -19,7 +19,7 @@ class Test_001_Login:
 
     @pytest.mark.sanity
     @pytest.mark.regression
-    @allure.severity(allure.severity_level.MINOR)
+    #@allure.severity(allure.severity_level.MINOR)
     def test_homepageTitle(self,setup):
         self.logger.info("******************Test_001_Login****************")
         self.logger.info("******************Verify Home Page Title****************")
@@ -37,7 +37,7 @@ class Test_001_Login:
 
     @pytest.mark.sanity
     @pytest.mark.regression
-    @allure.severity(allure.severity_level.CRITICAL)
+    #@allure.severity(allure.severity_level.CRITICAL)
     def test_Login(self,setup):
         self.logger.info("******************Verify Dashboard Page Title****************")
         self.driver = setup

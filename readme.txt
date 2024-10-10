@@ -11,3 +11,11 @@ Steps to Develop Python Framework:
  pytest -v -s testCases/test_Login.py --browser chrome
  pytest -vsm sanity
  pytest -vsm regression
+
+ ---------------------------------------------
+
+ Allure- Report:
+
+ allure serve C:\Vikram\Codebase\Python\PythonFramework\reports\allure-report
+
+ ---------------------------------------------
