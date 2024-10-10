@@ -1,1 +1,1 @@
-pytest -vsm sanity
+ pytest -vsm regression

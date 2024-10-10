@@ -6,5 +6,8 @@ Steps to Develop Python Framework:
 3. Create all the required python packages
 
 
+--------------- Run Test Cases ---------------
 
  pytest -v -s testCases/test_Login.py --browser chrome
+ pytest -vsm sanity
+ pytest -vsm regression
