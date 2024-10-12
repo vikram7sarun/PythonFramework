@@ -8,7 +8,7 @@ Steps to Develop Python Framework:
 
 --------------- Run Test Cases ---------------
 
- pytest -v -s testCases/test_Login.py --browser chrome
+ pytest -v -s testCases/test_Login.py --browser firefox
  pytest -vsm sanity
  pytest -vsm regression
 

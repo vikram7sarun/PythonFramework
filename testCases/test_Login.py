@@ -1,17 +1,14 @@
-import allure_commons.types
 import pytest
-from selenium import webdriver
 from pageObjects.LoginPage import LoginPage
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 import allure
-from allure_commons.types import AttachmentType
 
 
 @allure.severity(allure.severity_level.NORMAL)
 class Test_001_Login:
 
-    baseURL  = ReadConfig.getApplicationUrl()
+    baseURL = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUserEmail()
     password = ReadConfig.getPassword()
 
@@ -19,7 +16,7 @@ class Test_001_Login:
 
     @pytest.mark.sanity
     @pytest.mark.regression
-    #@allure.severity(allure.severity_level.MINOR)
+    @allure.severity(allure.severity_level.MINOR)
     def test_homepageTitle(self,setup):
         self.logger.info("******************Test_001_Login****************")
         self.logger.info("******************Verify Home Page Title****************")
@@ -37,7 +34,7 @@ class Test_001_Login:
 
     @pytest.mark.sanity
     @pytest.mark.regression
-    #@allure.severity(allure.severity_level.CRITICAL)
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_Login(self,setup):
         self.logger.info("******************Verify Dashboard Page Title****************")
         self.driver = setup
